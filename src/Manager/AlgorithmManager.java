@@ -1,7 +1,7 @@
 package Manager;
 
 import Algorithms.BackTracking;
-import Algorithms.HovosAlgorithm;
+import Algorithms.EasyPatternAlgorithm;
 import Algorithms.SimulatedAnnealing.SimulatedAnnealing;
 
 import static Manager.UIManager.N;
@@ -11,7 +11,7 @@ public class AlgorithmManager {
 
   public static int[][] callHovosAlgorithm() {
     long startTime = System.nanoTime();
-    int[][] result = HovosAlgorithm.n_queens();
+    int[][] result = EasyPatternAlgorithm.n_queens();
     long endTime = System.nanoTime();
     ms = endTime - startTime;
     return result;
